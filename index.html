@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/banner.css" />
+<link type="text/css" rel="stylesheet" href="css/slideshow.css" />
+
+<link rel="icon" type="image/ico" href="/images/pcpeanichicon.ico" />
+<link rel="shortcut icon" href="/images/pcpeanichicon.ico" />
+
+
+
+<title>Acrylic Buildmart</title>
+
+
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.setInterval.js"></script>
+  <script type="text/javascript">
+    (function( $ ){
+      // simple counter
+      var myCounter = 0;
+      
+      $.setInterval(function(){  // use anon delegate or existing function as delegate
+        $().html(myCounter++);
+      }, 500, function() {
+        return (myCounter > 20) ? true : false;
+      }, function() {
+        $('#counterDisplay').html('"<div class="grid"><ul class="acrylic-slideshow">            <li><span>01</span></li>            <li><span>02</span></li>            <li><span>03</span></li>            <li><span>04</span></li>            <li><span>05</span></li>            <li><span>06</span></li>            <li><span>07</span></li>            <li><span>08</span></li>        </ul><div class="topmenu1"><table border="0"><tr valign="middle"><td height="120px" width="80px"><center>  <div class="grid-item1">    <div class="firstmenu1"><a class="dropbtn1" href="Home.html">Home</a></div>  </div></center></td></tr></table></div></div><center><img src="logo/AcrylicLogo.jpg" alt="My Logo" width="150"><br><font size="1">Power by <b>KP Services Cambodia</b>. Copyright 2016</font></center>"');
+      });
+      
+    })( jQuery );
+  </script>
+  <style type="text/css">
+    .container {
+      margin:0 auto;
+    }
+    
+    #counterDisplay {}
+  </style>
+
+
+<script src="js/banner.js"> </script>
+<script src="js/slideshow.js"> </script>
+<style>
+  dody, html { margin: 0; padding: 0; height: 100%; width: 100%; }
+  #mySlideshow { position: fixed; left:0; top:0; z-index:1; height:100%; width:100%; } 
+</style>
+</head>
+
+
+<body bgcolor="white">
+  <div class="container">
+    <p id="counterDisplay">
+    <center>
+      <table width="700px">
+      <tr align="center" valign="middle"><td>
+        <marquee behavior="alternate"></marquee><img src="logo/AcrylicLogo1.jpg" width="300px"><br>
+      </td></tr>
+      <tr><td><br><br>
+        <marquee direction="left"> <font color="#999999" size="6" face="vani">Welcome to Acrylic Buildmart</font></marquee>
+      </td></tr>
+      </table>
+    </center>
+    </p>
+  </div>
+</body>
+</html>
